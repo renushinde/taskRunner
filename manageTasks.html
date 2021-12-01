@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>TaskRunner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+</head>
+
+<body onload=main()>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <a class="navbar-brand" href="index.html"> TaskRunner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addTask.html">Add Task</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Manage Task <span class="sr-only">current</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Other elements start here-->
+    <main>
+        <section id="taskManager">
+            <div class="container-fluid">
+                <div class="row" id="headRow">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h3>Manage Tasks</h3>
+                    </div>
+                </div>
+        </section>
+        <section id="tasks">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center" >
+                    <div class="col-12 d-flex justify-content-center">
+                        <h4>Tasks</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-none d-md-block col-md-1"></div>
+                    <div class="col-md-10">
+                        <div id="noTaskRow" class="row d-flex"> 
+                            <div class="col-12 d-flex justify-content-center">
+                                <p>NO TASKS TO DISPLAY</p>
+                            </div>
+                        </div>
+                        <div id="cardRow" class="row d-none d-flex justify-content-center" >
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block col-md-1"></div>
+                </div>
+        </section>
+        <section>
+            <div class="row d-flex align-items-center">
+                <div class="d-none d-md-block col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row" class ="d-none" id="loadTestButtonRow">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button id="loadTestButton" type="button" class="d-none btn btn-primary">Load Test Data</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button id="deleteTasksButton" type="button" class="btn btn-danger" disabled>Delete All Tasks</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-1"></div>
+            </div>
+        </section>
+    </main>
+  <!--Scripts section add scripts here-->
+  <!--   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+            crossorigin="anonymous">
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap.native@3.0.0/dist/bootstrap-native.min.js"></script>
+    <script src="./assets/js/task.js"></script>
+    <script src="./assets/js/manageTasks.js"></script>
+</body>
+
+</html>

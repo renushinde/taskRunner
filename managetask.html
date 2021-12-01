@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>TaskRunner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <a class="navbar-brand" href="index.html"> TaskRunner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="addtask.html">Add Task</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Manage Task <span class="sr-only">current</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Other elements start here-->
+    <main>
+        <section id="tasks">
+            <div class="container-fluid">
+                <div class="row row-head">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h3> List of Tasks</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-none d-md-block col-md-1"></div>
+                    <div class="col-md-10">
+                        <ul class="list-group">
+                            <div class="col-md4">
+                                <li class="list-group-item flex-fill">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="cd1Title">Task 1</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Project Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd1PrjNam">Final Project</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Task Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd1TskNam"> Wireframe</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Assigned To:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd1Asgn">Renu</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Status:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd1Status"> Done</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Due Date:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd1Due">06/25/2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-md4">
+                                <li class="list-group-item flex-fill">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="cd2Title">Task 2</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Project Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd2PrjNam">Final Project</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Task Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd2TskNam">Form Page</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Assigned To:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd2Asgn">Bobby</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Status:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd2Status">Done</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Due Date:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd2Due">06/28/2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-md4">
+                                <li class="list-group-item flex-fill">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="cd3Title">Task 3</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Project Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd3PrjNam">Final Project</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Task Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd3TskNam">Home page</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Assigned To:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd3Asgn">Renu</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Status:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd3Status">in progress</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Due Date:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd3Due">06/25/2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-md4">
+                                <li class="list-group-item flex-fill">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="cd4Title">Task 4</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Project Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd4PrjNam">Final Project</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Task Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd4TskNam">Home page Nav bar</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Assigned To:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd4Asgn">Renu</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Status:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd4Status">in progress</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Due Date:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd4Due">06/27/2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="col-md4">
+                                <li class="list-group-item flex-fill">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="cd5Title">Task 5</h5>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Project Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd5PrjNam">Final Project</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Task Name:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd5TskNam">Home page; list of cards</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Assigned To:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd5Asgn">Dominic</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Status:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd5Status">in progress</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <p class="card-text"> <strong>Due Date:</strong></p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <p class="card-text" id="cd5Due">06/27/2021</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="d-none d-md-block col-md-1"></div>
+                </div>
+        </section>
+    </main>
+
+    <!--Scripts section add scripts here-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>

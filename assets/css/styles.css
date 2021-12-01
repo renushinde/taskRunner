@@ -1,0 +1,123 @@
+
+body {
+    background-color: rgb(240, 245, 245);
+}
+
+main {
+    height: 100%;
+   
+}
+
+.navbar {
+    background-color: rgb(20, 145, 145) !important;
+}
+
+.nav-item.active {
+    text-decoration: underline;
+}
+
+table{
+    border: 1px solid black !important;
+}
+
+thead { 
+    position: sticky; 
+    top: 0; 
+    background-color: rgb(20, 145, 145) !important;
+}
+
+th { 
+    position: sticky; 
+    top: 0; 
+} 
+
+h3,h4{
+    text-decoration: underline;
+}
+
+form {
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding: 1rem ;
+    margin-bottom: 1rempx;
+}
+
+a.nav-link:hover{
+    text-decoration: underline;
+}
+
+#tasks {
+    margin: 0 2rem 2rem 2rem;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#headRow {
+    margin-top:4rem;
+}
+
+#taskTbCol{
+    margin:1rem;
+    border: 1px solid darkgrey;
+    border-radius: 5px;
+}
+
+#taskTbDiv{
+    height:80%;
+}
+
+
+.row-top {
+    height: 100%;
+}
+
+.btn:focus,
+.btn:hover {
+    background-color: rgb(112, 112, 116);
+}
+
+.table-hover tbody tr:hover td{
+    background-color: aquamarine;
+}
+
+.scrl-y {
+    display: block;
+    overflow-y: auto;
+}
+
+.card {
+    width: 22rem;
+    margin:1rem;
+
+}
+
+.btn{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* comment out VWS 
+  .aligncentre {
+    width: 150px;
+    height: 100px;
+    /* Center vertically and horizontally 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .content {
+    display: none;
+    margin: 1em 0;
+  }*/
+
+/* scroll bar example 
+.my-custom-scrollbar {
+  position: relative;
+  height: 50vh;
+  overflow: auto;
+  }
+
+  .table-wrapper-scroll-y {
+  display: block;
+  } */
